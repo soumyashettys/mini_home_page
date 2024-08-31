@@ -1,0 +1,107 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    background: linear-gradient(to bottom, #e9efea, #ecefec, #f6faf6);
+    /* background: linear-gradient(to bottom, #f3f5f4, #ffffff, #e5eae7); */
+
+
+}
+.main{
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	/* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+    /* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+    background: url("https://www.bing.com/images/search?view=detailV2&ccid=dVeW6Ebn&id=26093198294610D84657378273CBD4D7F6865428&thid=OIP.dVeW6EbnHqbqSiEvzg9CZwHaEc&mediaurl=https%3a%2f%2fthumbs.dreamstime.com%2fb%2fgreen-abstract-background-web-designing-book-cover-printing-card-making-site-background-wallpaper-illustrations-green-abstract-122539023.jpg&exph=480&expw=800&q=green+backgroud+for+website&simid=608055339908864278&FORM=IRPRST&ck=CDF10795820AE25DF1AF0941286415FB&selectedIndex=101&itb=0") no-repeat center/ cover;
+
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+    box-shadow: 5px 20px 50px #ece0e0;
+
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	/* color: #573b8a; */
+    color: #077130;
+
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #dee0de;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	/* background: #573b8a; */
+    background: #077103;
+    /* background: #3b8a3b; */
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	/* background: #6d44b8; */
+    background: #0c920a;
+}
+.login{
+	height: 460px;
+	background: #93c5a4;
+    
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	/* color: #573b8a; */
+    color: #077130;
+    /* color: #3b8a3b; */
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
